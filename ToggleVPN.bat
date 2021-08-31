@@ -1,2 +1,3 @@
 if not DEFINED IS_MINIMIZED set IS_MINIMIZED=1 && start "" /min "%~dpnx0" %* && exit
-Ipconfig|find/I %LSName% && rasdial %LSName% /disconnect || rasdial %LSName%
+ipconfig | find /I "%LSName%" && rasdial %LSName% /disconnect || rasdial %LSName%
+exit
